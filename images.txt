@@ -1,1 +1,1 @@
-quay.io/prometheus-operator/prometheus-operator:v0.86.2
+registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.17.0
