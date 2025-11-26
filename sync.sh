@@ -34,9 +34,14 @@ while IFS= read -r image; do
         continue
     fi
 
-    name=$(echo "${image}" | cut -d '/' -f2)
-    tag=$(echo "${name}" | cut -d ':' -f2)
-    targetFullName=${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${name}
+#    name=$(echo "${image}" | cut -d '/' -f2)
+#    tag=$(echo "${name}" | cut -d ':' -f2)
+#    targetFullName=${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${name}
+    # 1. 使用 basename 提取路径的最后一部分，它包含了镜像名和tag
+    image_and_tag=$(basename "${image}")
+
+    # 2. 目标镜像的完整地址是：目标Registry/目标Namespace/镜像名:Tag
+    targetFullName="${TARGET_REGISTRY}/${TARGET_NAMESPACE}/${image_and_tag}"
 
     # 打阿里云的tag
     docker tag "${image}" "${targetFullName}"
