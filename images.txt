@@ -1,1 +1,1 @@
-alpine:latest
+docker.io/busybox:latest
