@@ -1,1 +1,1 @@
-docker:24.0.5-dind
+gcr.io/kaniko-project/executor:v1.23.2
