@@ -1,1 +1,1 @@
-moby/buildkit:rootless
+moby/buildkit:latest
