@@ -1,1 +1,1 @@
-moby/buildkit:latest
+bitnami/git:latest
