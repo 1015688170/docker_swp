@@ -1,1 +1,1 @@
-bitnami/git:latest
+library/mariadb:latest
