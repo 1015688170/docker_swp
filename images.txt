@@ -1,1 +1,1 @@
-node:18-slim
+grafana/grafana:11.5.2
