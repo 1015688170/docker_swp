@@ -1,1 +1,1 @@
-ubuntu:22.04
+mcr.microsoft.com/playwright:v1.61.1-noble
